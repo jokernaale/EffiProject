@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+    <children>
+        <AnchorPane fx:id="main_field" layoutX="-6.0" layoutY="86.0" prefHeight="314.0" prefWidth="706.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="login_field" layoutX="14.0" layoutY="153.0" prefHeight="46.0" prefWidth="290.0" promptText="Username" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="password_field" layoutX="402.0" layoutY="153.0" prefHeight="46.0" prefWidth="290.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="authSignButton" layoutX="296.0" layoutY="260.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="130.0" style="-fx-background-color: #2E3348;" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="23.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="ID_field" layoutX="14.0" layoutY="92.0" prefHeight="46.0" prefWidth="290.0" promptText="ID" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastName_field" layoutX="402.0" layoutY="22.0" prefHeight="46.0" prefWidth="290.0" promptText="Last Name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="firstName_field" layoutX="14.0" layoutY="22.0" prefHeight="46.0" prefWidth="290.0" promptText="First Name" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="birtthday_datePicker" layoutX="402.0" layoutY="92.0" prefHeight="46.0" prefWidth="290.0" promptText="Birthday Date" style="-fx-border-radius: 5;" />
+            <RadioButton fx:id="men_radio" layoutX="402.0" layoutY="220.0" mnemonicParsing="false" text="Men">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="women_radio" layoutX="228.0" layoutY="220.0" mnemonicParsing="false" text="Women">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="196.0" prefHeight="86.0" prefWidth="303.0" text="ParkOFF" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="54.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
